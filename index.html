@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="movie-container">
+        <label>Pick a Movie:</label>
+        <select id="movie">
+            <option value="250,Joker">Joker (INR 250)</option>
+            <option value="300,Prisoners">Prisoners (INR 300)</option>
+            <option value="500,Interstellar">Interstellar (INR 500)</option>
+            <option value="100,Jaws">Jaws (INR 100)</option>
+        </select>
+
+        <!--Legend for the different types of seats:
+        1. Selected 2. Unselected -->
+
+        <ul class="showcase">
+            <li>
+                <div class="seat"></div>
+                <small>N/A</small>
+            </li>
+            <li>
+                <div class="seat selected"></div>
+                <small>Selected</small>
+            </li>
+            <li>
+                <div class="seat occupied"></div>
+                <small>Occupied</small>
+            </li>
+        </ul>
+
+        <!-- Theater Layout -->
+        <div class="container">
+            <div class="screen"></div>
+
+            <!-- Row 1 -->
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <!-- Row 3 -->
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+            </div>
+            <!-- Row 4 -->
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <!-- Row 5 -->
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <!-- Row 6 -->
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+
+        <p class="text">You have selected: 
+            <span id="count">0</span>
+            seats for a price of:
+            <span id="total">0</span>
+        </p>
+
+        
+
+    </div>
+
+    <button id="button">Book!</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
